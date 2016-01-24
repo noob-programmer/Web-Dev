@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<title>Dating Site</title>
+		<script type="text/javascript" src="https://.."></script>
+		<style type="text/css">
+			fieldset
+			{
+				background: lightyellow;
+				border:10px solid yellow;
+				margin-bottom: 10px;
+				width: 720px;
+			}
+			label
+			{
+				text-align:auto;
+				width:180px;
+				display: inline-block;
+
+			}
+			.contact
+			{
+				text-align:auto;
+				width:auto;
+			}
+			.gender
+			{
+				width: auto;
+			}
+			.salary
+			{
+				text-align: center;
+
+			}
+			.height
+			{
+				text-align: center;
+			}
+			textarea
+			{
+				width:360px;
+				height: 50px;
+			}
+			span
+			{
+				background-color: purple;
+				color:purple;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1>Please Enter Your Details For Our Dating Website!</h1>
+		<form action="https://.." method="post" enctype="multipart/form-data">
+			<fieldset>
+				<legend>Your Face</legend>
+					<label for="avatar">Your image:</label>
+					<input type="file" value="Choose file" required id="avatar" name="avatar"><br>
+					<br>
+					<label for="preview">image preview:</label>
+					<img id="preview">
+			</fieldset>
+			<fieldset>
+				<legend>Your General Details</legend>
+				<label for="name">Name:</label>
+				<input type="text" placeholder="Your full name" required id="name" name="name"><br>
+				<label for="gender">Gender:</label>
+				<input type="radio" required id="gender" name="gender">Male
+				<input type="radio" required id="gender" name="gender">Female<br>
+				<label for="age">Age:</label>
+				<input type="number" required id="age" name="age"><br>
+				<label for="DOB">Date of Birth:</label>
+				<input type="date" id="DOB" name="DOB" value="dd/mm/yyyy"><br>
+				<label for="colour">Favourite color:</label>
+				<input type="color" id="colour" name="colour"><br>
+				<label for="country">Which country:</label>
+				<select>
+					<option>No selection</option>
+					<option>India</option>
+					<option>The United States of America</option>
+					<option>The United Kingdom</option>
+					<option>China</option>
+					<option>Germany</option>
+
+				</select> 
+			</fieldset>
+			<fieldset>
+				<legend for="indicator">your indicators</legend>
+				<label for="height">Height:</label>
+				Short<input type="range" min="Short" max="Tall" step="5" value="50" id="height" name="height">Tall<br>
+				<label for="salary">Salary</label>
+				Poor<input type="range" min="Poor" max="rich" step="5" value="40" id="salary" name="salary">Rich<br>
+			</fieldset>
+			<fieldset>
+				<legend>Your Contact Information</legend>
+				<label for="mail">Email:</label>
+				<input type="text" required id="mail" name="mail"><br>
+				<label for="mob">Mobile:</label>
+				<input type="tel" id="mob" name="mob"><br>
+				<label for="add">Address:</label>
+				<textarea></textarea><br>
+				<label for="contact">Method to contact you:</label>
+				<input type="checkbox" id="contact" name="contact">Email			
+				<input type="checkbox" id="contact" name="contact">Whatsapp
+				<input type="checkbox" id="contact" name="contact">In-app chat
+			</fieldset>
+			<input type="submit" value="Submit">
+
+		</form> 	
+
+
+	</body>
