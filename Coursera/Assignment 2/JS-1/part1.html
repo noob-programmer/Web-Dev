@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Colour Guessing Game Part1</title>
+    <script>
+    var colours=["blue","cyan","gold","gray","green","magenta","orange","red","white","yellow"];
+    function do_game()
+    {
+      var guess_colour;
+      var colour_target;
+      colour_target=Math.floor(Math.random()*colours.length);
+      alert(colours[colour_target]);
+      while(true)
+      {
+        guess_colour=prompt("I am thinking of one of these colours:\n\n"+colours+"\n\n What color am I thinking of?");
+        if(colours[colour_target]==guess_colour)
+          break;
+      }
+    }
+    do_game();
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
